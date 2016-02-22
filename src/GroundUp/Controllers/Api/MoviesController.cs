@@ -27,6 +27,12 @@ namespace GroundUp.Controllers.Api
             return Json(movies);
         }
 
+        [HttpGet("Throw")]
+        public void ThrowEx()
+        {
+            throw new Exception("Something bad hapenned!");
+        }
+
         // GET api/values/5
         [HttpGet("{id}")]
         public JsonResult Get(int id)

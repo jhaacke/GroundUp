@@ -28,6 +28,8 @@ namespace GroundUp
             {
                 //TODO: Set log level
                 //TODO: app.UseDeveloperExceptionPage();
+                app.UseDeveloperExceptionPage();
+
             }
             else
             {
@@ -40,6 +42,8 @@ namespace GroundUp
             app.UseDefaultFiles();
 
             app.UseStaticFiles();
+
+            app.UseRuntimeInfoPage();
 
             app.UseMvc();
 
